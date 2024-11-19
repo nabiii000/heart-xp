@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEARTXP</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts for Press Start 2P -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="diffcolor">HEART</span><span class="name">XP </span>&lt;3</h1>
+        </header>
+        <main>
+            <section class="search">
+                <h2>Find Your Forever Duo ♡</h2>
+                <form id="search-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                
+                    <label for="consoles">Choose Your Primary Console:</label>
+                    <select id="consoles" name="consoles" class="colorful-dropdown" multiple required onchange="toggleGameOptions()">
+                        <option value="PC">PC Games</option>
+                        <option value="Playstation">Playstation</option>
+                        <option value="Xbox">Xbox</option>
+                        <option value="Nintendo">Nintendo Consoles</option>
+                        <option value="Mobile">Mobile Games</option>
+                    </select>
+                
+                    <div id="game-options">
+                        <div id="pc-games" class="game-option" style="display: none;">
+                            <label>PC Games:<br></label><br>
+                            <input type="checkbox" name="pc-game" value="League of Legends"> League of Legends<br>
+                            <input type="checkbox" name="pc-game" value="Valorant"> Valorant<br>
+                            <input type="checkbox" name="pc-game" value="Roblox"> Roblox<br>
+                            <input type="checkbox" name="pc-game" value="Minecraft"> Minecraft<br>
+                            <input type="checkbox" name="pc-game" value="CS go"> CS go<br>
+                            <input type="checkbox" name="pc-game" value="Other"> Other (please specify): <input type="text" id="pc-other-game" name="pc-other-game"><br>
+                        </div>
+                        <div id="xbox-games" class="game-option" style="display: none;">
+                            <label>Xbox:<br></label><br>
+                            <input type="checkbox" name="xbox-game" value="Persona"> Persona<br>
+                            <input type="checkbox" name="xbox-game" value="Other"> Other (please specify): <input type="text" id="xbox-other-game" name="xbox-other-game"><br>
+                        </div>
+                        <div id="nintendo-games" class="game-option" style="display: none;">
+                            <label>Nintendo Consoles:<br></label><br>
+                            <input type="checkbox" name="nintendo-game" value="Super Smash Bros"> Super Smash Bros<br>
+                            <input type="checkbox" name="nintendo-game" value="Animal Crossing"> Animal Crossing<br>
+                            <input type="checkbox" name="nintendo-game" value="Other"> Other (please specify): <input type="text" id="nintendo-other-game" name="nintendo-other-game"><br>
+                        </div>
+                        <div id="playstation-games" class="game-option" style="display: none;">
+                            <label>Playstation:<br></label><br>
+                            <input type="checkbox" name="playstation-game" value="Last of Us"> Last of Us<br>
+                            <input type="checkbox" name="playstation-game" value="Other"> Other (please specify): <input type="text" id="playstation-other-game" name="playstation-other-game"><br>
+                        </div>
+                        <div id="mobile-games" class="game-option" style="display: none;">
+                            <label>Mobile Games:<br></label><br>
+                            <input type="checkbox" name="mobile-game" value="Candy Crush"> Candy Crush<br>
+                            <input type="checkbox" name="mobile-game" value="Clash of Clans"> Clash of Clans<br>
+                            <input type="checkbox" name="mobile-game" value="Cookie Run"> Cookie Run<br>
+                            <input type="checkbox" name="mobile-game" value="Other"> Other (please specify): <input type="text" id="mobile-other-game" name="mobile-other-game"><br>
+                        </div>
+                    </div>
+                
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" class="gender-dropdown" required onchange="toggleGenderInput()">
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                
+                    <input type="text" id="otherGender" name="otherGender" placeholder="Specify your gender" style="display: none;">
+                
+                    <button type="submit">♡Next♡</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
