@@ -1,0 +1,187 @@
+  /* Reset default styles and apply custom font */
+  html, body {
+    font-family: "Press Start 2P", cursive;
+    background-color: #000000;
+    color: #9d8189;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Container styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  /* Header styles */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    color: #f4acb7;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .diffcolor {
+    color: #f4acb7;
+  }
+
+  .name {
+    color: #9d8189;
+  }
+
+  /* Main section styles */
+  main {
+    color: #D8E2DC;
+    margin-top: 20px;
+  }
+
+  /* Search form styles */
+  .search {
+    margin: 30px 0;
+  }
+
+  .search form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search label {
+  margin: 10px 0 5px;
+  color: #FFCAD4;
+  }
+
+  .search input[type="text"], .search select {
+    color: #9d8189;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: "Press Start 2P", cursive;
+  }
+
+
+
+  .search button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffcad4;
+    color: #9D8189;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Press Start 2P", cursive;
+  }
+
+  .search button:hover {
+    background-color: #ffe5d9;
+  }
+
+  /* Dropdown styles */
+  .colorful-dropdown, .gender-dropdown {
+    font-family: "Press Start 2P", cursive;
+    background-color: #fff;
+    color: #9d8189;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .colorful-dropdown option:checked {
+    background-color: #ffcad4;
+    color: #fff;
+  }
+
+  /* Matches section styles */
+  .matches {
+    margin-top: 30px;
+  }
+
+  .matches h2 {
+    color: #D8E2DC;
+  }
+
+  form {
+  display: flex;
+  flex-direction: column;
+  }
+
+
+
+  form input[type="text"],
+  form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  form button {
+  padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .game-option {
+  padding: 10px;
+
+  }
+
+#firstName, #lastName, #gender-other-preference, #location, #experience, #age, #height, #relationshipType, #profilePicture, #bio, #country, #province, #city, #distance {
+    color: #9d8189;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: "Press Start 2P", cursive;
+    margin: 10px 0;
+}
+
+
+.form-group, label[for=genderPreference] {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  color: #ffcad4;
+
+}
+
+#submit-button {
+  background-color: #ffcad4;
+  padding: 10px 20px;
+    
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Press Start 2P", cursive;
+}
+
+#file-upload {
+  display: none;
+}
+.custom-file-upload {
+
+    padding: 10px;
+    background-color: #ffcad4;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0;
+}
