@@ -1,2 +1,2 @@
 # heart-xp
-still in progress...
+in progress - making a dating app for gamers!
